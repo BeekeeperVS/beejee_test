@@ -1,0 +1,207 @@
+html{
+	background-color: #e5e5e5;
+}
+body {
+    zoom: 115%;
+    font-size: 14px;
+}
+.center-content {
+    text-align: center;
+}
+
+.app-content{
+  min-height: calc(100vh - 176px);
+}
+
+h1, .h1{
+  margin-bottom: 2rem;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+th{
+  text-align: center;
+}
+
+.input-group .form-control:first-child{
+  margin-right: -1px;
+}
+.form-control{
+  font-size: 1.3rem;
+}
+
+.btn{
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+}
+
+.period{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+-ms-align-items: flex-start;
+  align-items: flex-start;
+}
+.period-item{
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+.period-item~.form-group{
+  margin-top: 11px;
+}
+.period-item label{
+  padding: 6px 10px 6px 0;
+  margin-bottom: 0;
+}
+.period-item .form-group{
+  margin-right: 10px;
+}
+.period-item .help-block{
+  margin-bottom: 0;
+}
+
+
+@media all and (max-width: 991px){
+  .period{
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+  }
+  .period-item{
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+  }
+  .period-item label{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 35px;
+    padding-right: 0;
+  }
+  .period-item .form-group{
+    margin-right: 0;
+  }
+}
+
+.input-group-addon, .input-group-btn{
+  width: auto;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+
+.search-actions{
+  width: 165px;
+}
+
+@media all and (max-width: 1199px){
+  .table .filters .btn{
+    display: block;
+    margin: 5px auto;
+  }
+}
+
+.users-action-th{
+  width: 165px;
+}
+.users-actions a{
+  margin: 0 5px;
+}
+
+select.form-control:not([size]):not([multiple]){
+  height: 34px;
+}
+
+.table-accrual, .table-accrual tr th, .table-accrual tr td {
+  border: 2.5px solid #ddd;
+}
+
+table thead {
+  border-top: 2px solid #ddd;
+}
+
+.selectize-input{
+	height: 34px;
+	width: 100%;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #FFF;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+
+}
+.has-success .select2-container--open .select2-selection, .has-success .select2-container--krajee.select2-container--focus .select2-selection{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.selectize-input.focus{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border-color: #009688;
+}
+.has-success .selectize-input{
+	border-color: #3c763d;
+}
+.selectize-dropdown, .selectize-dropdown.form-control{
+	max-width: 100%	;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+	background-color: #009688;
+	border-color: #009688;
+}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover, .pagination>li>a, .pagination>li>span{
+	color: #009688;
+}
+
+.hide {
+  display: none;
+}
+.datepicker.dropdown-menu{
+	margin-top: 56px;
+}
+.input-success {
+  border: 2px solid green;
+}
+.input-error {
+  border: 2px solid red;
+}
+button.update-workId {
+  background-color: transparent;
+  border: none;
+}
+span.update-workId {
+  color: #009688;
+}
+
+.filter-actions .btn{
+	margin: 5px;
+}
+td.text-center a{
+	margin: 0 5px;
+}
+
+header {
+  height: 50px;
+}
