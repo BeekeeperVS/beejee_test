@@ -10,7 +10,7 @@ use vendor\components\Helper;
 
 ?>
 <h3><?= isset($model->id) ? 'Update task №' . $model->id : 'Create task'; ?></h3>
-<form action="<?= ($model->id) ? Helper::createUrl("/site/update/{$model->id}") : Helper::createUrl('/create/') ?>"
+<form action="<?= ($model->id) ? Helper::createUrl("/update/{$model->id}") : Helper::createUrl('/create/') ?>"
       method="post">
     <div class="form-group row">
         <label for="inputPassword3" class="col-sm-2 col-form-label">User Name</label>

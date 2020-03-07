@@ -64,10 +64,10 @@ class SiteController extends BaseController
     public function actionUpdate($id)
     {
         if (!Users::isAdmin()) {
-            header('Location: /index');
+            header('Location: /login');
         }
         $model = Tasks::query()->selectById($id);
-        if (!empty($_POST)) {
+        if (!empty($_POST) && Users::isAdmin()) {
             $model = new Tasks();
             $model->id = $id;
             $model->user_name = $_POST['name'];

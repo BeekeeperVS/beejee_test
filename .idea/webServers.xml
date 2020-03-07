@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d57a01d3-e857-4656-9ebb-8b5e22b1d584" name="beejee" url="http://45.94.157.175">
+        <fileTransfer host="45.94.157.175" port="22" rootFolder="/home/svautop1/beejee.sv-auto-parser.info" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
