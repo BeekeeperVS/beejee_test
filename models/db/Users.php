@@ -34,7 +34,7 @@ class Users
      */
     public static function isAdmin(): bool
     {
-        return $_SESSION['auth'];
+        return $_SESSION['auth'] ?? false;
     }
 
 }

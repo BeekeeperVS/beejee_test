@@ -6,7 +6,6 @@ namespace vendor\components;
 class Application extends BaseApplication
 {
     private $basePath = 'index.php';
-    private $routes;
 
     public function __construct(array $config)
     {
@@ -33,12 +32,6 @@ class Application extends BaseApplication
 
                 $parameters = $segments;
 
-                $controllerFile =  'controllers/' . $controllerName . '.php';
-
-//                if (file_exists($controllerFile)) {
-//                    include_once($controllerFile);
-//                }
-//                $controllerName .=  'controllers/';
                 $controllerObject = new $controllerName($viewPath);
 
 
