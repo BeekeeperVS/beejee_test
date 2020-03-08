@@ -32,7 +32,8 @@ $dataKey = ($_GET['page'] == 1) ? 0 : $perPage;
                 <th>#</th>
                 <th><a href="<?= Helper::createSortableUrl('/index', ['sort' => 'user_name']) ?>"
                        data-sort="title">Name</a></th>
-                <th><a href="<?= Helper::createSortableUrl('/index', ['sort' => 'email']) ?>" data-sort="cipher">Email</a>
+                <th><a href="<?= Helper::createSortableUrl('/index', ['sort' => 'email']) ?>"
+                       data-sort="cipher">Email</a>
                 </th>
                 <th><a href="<?= Helper::createSortableUrl('/index', ['sort' => 'text']) ?>"
                        data-sort="type_alias">Text</a></th>
@@ -67,10 +68,10 @@ $dataKey = ($_GET['page'] == 1) ? 0 : $perPage;
             </tbody>
         </table>
         <ul class="pagination">
-            <li class="prev <?= $_GET['page'] == 1 ? 'disabled' : '' ?>"><a
+            <li class="prev <?= (!isset($_GET['page']) || $_GET['page'] == 1) ? 'disabled' : '' ?>"><a
                         href="<?= Helper::createGetUrl('/index', ['page' => $_GET['page'] - 1]) ?>">«</a></li>
             <?php for ($i = 1; $i <= $countPage; $i++): ?>
-                <li class="<?= ($i == $_GET['page']) ? 'active' : '' ?>">
+                <li class="<?= (($i == $_GET['page']) || (!isset($_GET['page']) && $i == 1)) ? 'active' : '' ?>">
                     <a href="<?= ($i != $_GET['page']) ? Helper::createGetUrl('/index', ['page' => $i]) : '#' ?>"
                        data-page="0">
                         <?= $i; ?>
